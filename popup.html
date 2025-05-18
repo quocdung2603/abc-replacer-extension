@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cài đặt ABC Replacer</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        width: 300px;
+        padding: 10px;
+        margin: 0;
+        background-color: #f5f5f5;
+      }
+      h2 {
+        font-size: 16px;
+        margin: 0 0 10px;
+        color: #333;
+      }
+      .checkbox-container {
+        margin-bottom: 8px;
+      }
+      label {
+        font-size: 14px;
+        color: #333;
+        display: flex;
+        align-items: center;
+      }
+      input[type="checkbox"] {
+        margin-right: 8px;
+      }
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 14px;
+        margin-top: 10px;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">Cài đặt ABC Replacer</h2>
+    <div class="checkbox-container">
+      <label
+        ><input type="checkbox" id="titles" /> Ẩn tiêu đề cuộc trò chuyện</label
+      >
+    </div>
+    <div class="checkbox-container">
+      <label
+        ><input type="checkbox" id="messages" /> Ẩn nội dung tin nhắn xem
+        trước</label
+      >
+    </div>
+    <div class="checkbox-container">
+      <label><input type="checkbox" id="senderNames" /> Ẩn tên người gửi</label>
+    </div>
+    <div class="checkbox-container">
+      <label
+        ><input type="checkbox" id="messageContent" /> Ẩn nội dung tin
+        nhắn</label
+      >
+    </div>
+    <div class="checkbox-container">
+      <label><input type="checkbox" id="emojis" /> Ẩn emoji</label>
+    </div>
+    <div class="checkbox-container">
+      <label
+        ><input type="checkbox" id="headerTitles" /> Ẩn tiêu đề ở đầu</label
+      >
+    </div>
+    <div class="checkbox-container">
+      <label><input type="checkbox" id="tags" /> Ẩn thẻ tag</label>
+    </div>
+    <div class="checkbox-container">
+      <label><input type="checkbox" id="stickers" /> Ẩn sticker</label>
+    </div>
+    <div class="checkbox-container">
+      <label
+        ><input type="checkbox" id="placeholders" /> Ẩn placeholder nhập tin
+        nhắn</label
+      >
+    </div>
+    <div class="checkbox-container">
+      <label><input type="checkbox" id="images" /> Ẩn hình ảnh</label>
+    </div>
+    <div class="checkbox-container">
+      <label><input type="checkbox" id="files" /> Ẩn tên file</label>
+    </div>
+    <button id="save">Lưu cài đặt</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
