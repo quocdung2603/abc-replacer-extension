@@ -6,7 +6,11 @@
   "permissions": ["storage", "activeTab", "scripting"],
   "content_scripts": [
     {
-      "matches": ["https://chat.zalo.me/*"],
+      "matches": [
+        "https://chat.zalo.me/*",
+        "https://www.messenger.com/t/*",
+        "https://www.messenger.com/e2ee/t/*"
+      ],
       "js": ["content.js"]
     }
   ],

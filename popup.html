@@ -17,11 +17,23 @@
         margin: 0 0 10px;
         color: #333;
       }
+      h3 {
+        font-size: 14px;
+        margin: 10px 0 5px;
+        color: #555;
+      }
+      .section {
+        margin-bottom: 15px;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
       .checkbox-container {
         margin-bottom: 8px;
       }
       label {
-        font-size: 14px;
+        font-size: 13px;
         color: #333;
         display: flex;
         align-items: center;
@@ -43,56 +55,110 @@
       button:hover {
         background-color: #0056b3;
       }
+      .hidden {
+        display: none;
+      }
     </style>
   </head>
   <body>
-    <h2 style="text-align: center">Cài đặt ABC Replacer</h2>
-    <div class="checkbox-container">
-      <label
-        ><input type="checkbox" id="titles" /> Ẩn tiêu đề cuộc trò chuyện</label
-      >
+    <h2>Cài đặt ABC Replacer</h2>
+
+    <div id="zalo-settings" class="section">
+      <h3>Cài đặt cho Zalo</h3>
+      <div class="checkbox-container">
+        <label
+          ><input type="checkbox" id="zalo_titles" /> Ẩn tiêu đề cuộc trò
+          chuyện</label
+        >
+      </div>
+      <div class="checkbox-container">
+        <label
+          ><input type="checkbox" id="zalo_messages" /> Ẩn nội dung tin nhắn xem
+          trước</label
+        >
+      </div>
+      <div class="checkbox-container">
+        <label
+          ><input type="checkbox" id="zalo_senderNames" /> Ẩn tên người
+          gửi</label
+        >
+      </div>
+      <div class="checkbox-container">
+        <label
+          ><input type="checkbox" id="zalo_messageContent" /> Ẩn nội dung tin
+          nhắn</label
+        >
+      </div>
+      <div class="checkbox-container">
+        <label><input type="checkbox" id="zalo_emojis" /> Ẩn emoji</label>
+      </div>
+      <div class="checkbox-container">
+        <label
+          ><input type="checkbox" id="zalo_headerTitles" /> Ẩn tiêu đề ở
+          đầu</label
+        >
+      </div>
+      <div class="checkbox-container">
+        <label><input type="checkbox" id="zalo_tags" /> Ẩn thẻ tag</label>
+      </div>
+      <div class="checkbox-container">
+        <label><input type="checkbox" id="zalo_stickers" /> Ẩn sticker</label>
+      </div>
+      <div class="checkbox-container">
+        <label
+          ><input type="checkbox" id="zalo_placeholders" /> Ẩn placeholder nhập
+          tin nhắn</label
+        >
+      </div>
+      <div class="checkbox-container">
+        <label><input type="checkbox" id="zalo_images" /> Ẩn hình ảnh</label>
+      </div>
+      <div class="checkbox-container">
+        <label><input type="checkbox" id="zalo_files" /> Ẩn tên file</label>
+      </div>
     </div>
-    <div class="checkbox-container">
-      <label
-        ><input type="checkbox" id="messages" /> Ẩn nội dung tin nhắn xem
-        trước</label
-      >
+
+    <div id="messenger-settings" class="section">
+      <h3>Cài đặt cho Messenger</h3>
+      <div class="checkbox-container">
+        <label
+          ><input type="checkbox" id="messenger_titles" /> Ẩn tiêu đề cuộc trò
+          chuyện</label
+        >
+      </div>
+
+      <div class="checkbox-container">
+        <label
+          ><input type="checkbox" id="messenger_senderNames" /> Ẩn tên người
+          gửi</label
+        >
+      </div>
+      <div class="checkbox-container">
+        <label
+          ><input type="checkbox" id="messenger_messageContent1" /> Ẩn nội dung
+          tin nhắn của mình</label
+        >
+      </div>
+      <div class="checkbox-container">
+        <label
+          ><input type="checkbox" id="messenger_messageContent2" /> Ẩn nội dung
+          tin nhắn của mình</label
+        >
+      </div>
+      <div class="checkbox-container">
+        <label
+          ><input type="checkbox" id="messenger_messageImage" /> Ẩn hình
+          ảnh</label
+        >
+      </div>
+      <div class="checkbox-container">
+        <label
+          ><input type="checkbox" id="messenger_messageVideo" /> Ẩn hình
+          ảnh</label
+        >
+      </div>
     </div>
-    <div class="checkbox-container">
-      <label><input type="checkbox" id="senderNames" /> Ẩn tên người gửi</label>
-    </div>
-    <div class="checkbox-container">
-      <label
-        ><input type="checkbox" id="messageContent" /> Ẩn nội dung tin
-        nhắn</label
-      >
-    </div>
-    <div class="checkbox-container">
-      <label><input type="checkbox" id="emojis" /> Ẩn emoji</label>
-    </div>
-    <div class="checkbox-container">
-      <label
-        ><input type="checkbox" id="headerTitles" /> Ẩn tiêu đề ở đầu</label
-      >
-    </div>
-    <div class="checkbox-container">
-      <label><input type="checkbox" id="tags" /> Ẩn thẻ tag</label>
-    </div>
-    <div class="checkbox-container">
-      <label><input type="checkbox" id="stickers" /> Ẩn sticker</label>
-    </div>
-    <div class="checkbox-container">
-      <label
-        ><input type="checkbox" id="placeholders" /> Ẩn placeholder nhập tin
-        nhắn</label
-      >
-    </div>
-    <div class="checkbox-container">
-      <label><input type="checkbox" id="images" /> Ẩn hình ảnh</label>
-    </div>
-    <div class="checkbox-container">
-      <label><input type="checkbox" id="files" /> Ẩn tên file</label>
-    </div>
+
     <button id="save">Lưu cài đặt</button>
     <script src="popup.js"></script>
   </body>
